@@ -109,7 +109,7 @@ Authors:        Joshua Miller
     4. Run `git commit -m "<message>"` - Adds this set of changes to the repository (repository is like the storage of this project on GitHub) with a meggage: Make the message a short desscription of what changes were made.
     5. Run `git push` - This ships all your commits off to the repository so others can see your commits
   * **B.)**
-    1. Click Source Control: [Source Control Button](readme-assets/source-control-button.png)
+    1. Click Source Control: ![Source Control Button](readme-assets/source-control-button.png)
     2. Enter a message - Make the message a short desscription of what changes were made.
     3. Click Commit. (Save all if you haven't already)
     4. Click *Yes* to staging (you can also select *Always* if you want).
