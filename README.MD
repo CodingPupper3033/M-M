@@ -67,3 +67,14 @@ Authors:        Joshua Miller
 
 ## Uploading code to the EV3
 1. Click the download button in the EV3DEV DEVICE BROWSER Tab: ![Download Button](readme-assets/download-button.png)
+
+## Running your code.
+1. If not already, upload your code: [Uploading code to the EV3](#uploading-code-to-the-ev3)
+2. There are different options:
+   * On the Brick:
+     * **A.)** Browse to the file, and click on the file
+   * On your computer (first open the EV3DEV device browser)
+     * **B.)** Right click the file, and hit run.
+     * **C.)** Left click the file, and then hit run in the popup.
+     * **D.)** Right click the robot name. Click open SSH Terminal. ```cd``` to the correct directory. Run the file by entering the command ```brickrun -r ./filename```
+       * This option allows for communication between the robot and your computer. Useful for robot signals.
