@@ -21,10 +21,21 @@ Authors:        Joshua Miller
 8. Enter the following command: ```pip install python-ev3dev```
    * Installs the ev3dev libraries so you can get better syntax highlighting. (And remove the library not found error)
 9. Connect to the robot: [Connecting to the robot](#connecting-to-the-robot)
+10. Connect the robot to Visual Studio Code: [Connect your EV3 to Visual Studio Code](#connect-your-ev3-to-visual-studio-code)
 
 
 ## Connecting to the robot
 1. Have the robot charged
-2. Turn on the robot
+2. Turn on the robot: Press the square button in the middle of the boi
 3. Wait for the robot to startup
-4. 
+4. Navigate to the menu *Wireless and Networks > Bluetooth*
+5. If not already, turn on:
+   1. *Powered*
+   2. *Visible*
+6. Press the *Start Scan* button
+7. On your PC (or mac? :/) open bluetooth devices settings.
+8. Click the button designating adding a bluetooth device
+9. Either click on the robot's name from your PC, or your computer's name from the robot.
+10. Make sure the pins matchup, and accept the pair request.
+
+## Connect your EV3 to Visual Studio Code
