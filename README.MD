@@ -40,7 +40,8 @@ Authors:        Joshua Miller
 ## How to Code:
 1. Make sure you did everything in [How to start](#how-to-start)
 2. Do some coding.
-3. 
+3. Save the code. (`ctrl+s`)
+4. [Upload to GitHub](#upload-to-github)
 
 
 ## Connecting to the robot
@@ -96,3 +97,19 @@ Authors:        Joshua Miller
      * **C.)** Left click the file, and then hit run in the popup.
      * **D.)** Right click the robot name. Click open SSH Terminal. ```cd``` to the correct directory. Run the file by entering the command ```brickrun -r ./filename```
        * This option allows for communication between the robot and your computer. Useful for robot signals.
+
+
+# Upload to GitHub
+* There are different options:
+  * **A.)** Terminal
+    1. Open a Terminal: One is included in Visual Studio Code
+    2. Navigate to the main folder if not already
+    3. Run `git add .` - Adds all the files that are changed to the staging area (getting it prepared to be shipped off). Other option is to do `git add <file name>` for each modified file.
+    4. Run `git commit -m "<message>"` - Adds this set of changes to the repository (repository is like the storage of this project on GitHub) with a meggage: Make the message a short desscription of what changes were made.
+    5. Run `git push` - This ships all your commits off to the repository so others can see your commits
+  * **B.)**
+    1. Click Source Control: [Source Control Button](readme-assets/source-control-button.png)
+    2. Enter a message - Make the message a short desscription of what changes were made.
+    3. Click Commit. (Save all if you haven't already)
+    4. Click *Yes* to staging (you can also select *Always* if you want).
+    5. Click Sync Changes.
