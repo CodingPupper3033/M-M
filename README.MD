@@ -35,6 +35,7 @@ Authors:        Joshua Miller
 9. Connect to the robot: [Connecting to the robot](#connecting-to-the-robot)
 10. Setup GitHub - So you can get the code, and contribute to it: [Setup Github](#setup-github)
 11. Connect the robot to Visual Studio Code: [Connect your EV3 to Visual Studio Code](#connect-your-ev3-to-visual-studio-code)
+12. Restart Visual Studio Code - Makes some changes take effect
 
 
 ## How to Code:
