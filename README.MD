@@ -44,7 +44,7 @@ Authors:        Joshua Miller
 1. Cry
 2. Brace yourself
 3. Cry again
-4. Make a folder for your project
+4. Make a folder for your project on your computer
 5. Open a Terminal: One is included in Visual Studio Code
 6. Change directory to that of the folder you just created: ```cd <folder>``` will help. Either enter the absolute path, or the name of a folder inside the folder you currently are in. - Crying yet?
 7. Run the command: ```git init``` - will tell git/(GitHub, kind of, it is a square and rectangle relationship) that this folder will be communicating with git/GitHub. 
@@ -60,4 +60,10 @@ Authors:        Joshua Miller
 
 ## Connect your EV3 to Visual Studio Code
 1. Click on the Explorer button on the left pane: ![Explorer Button](readme-assets/explorer-button.png)
-2. At the bottom, 
+2. At the bottom, expand the tab *EV3DEV DEVICE BROWSER*: ![EV3DEV DEVICE BROWSER](readme-assets/ev3-device-browser-tab.png)
+3. Click *Click here to connect to a device*
+4. Click the correct device in the list of devices that pops up in the center of your screen.
+5. Should be all set.
+
+## Uploading code to the EV3
+1. Click the download button in the EV3DEV DEVICE BROWSER Tab: ![Download Button](readme-assets/download-button.png)
