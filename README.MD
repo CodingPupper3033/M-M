@@ -113,3 +113,4 @@ Authors:        Joshua Miller
     3. Click Commit. (Save all if you haven't already)
     4. Click *Yes* to staging (you can also select *Always* if you want).
     5. Click Sync Changes.
+    6. Click OK to the message.
