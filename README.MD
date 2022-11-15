@@ -22,13 +22,13 @@ Authors:        Joshua Miller
 4. Open Visual Studio Code
 5. On the left pane, select Extensions: ![Extensions button](readme-assets/extensions.png)
 6. Install the plugins: Make sure the author is correct!
- * ev3dev-browser: Allows us to communicate to the robot
-   * Author:     ev3dev
-   * Version:    > 1.0.4
-   * Image:      ![ev3dev-browser](readme-assets/rv3dev-browser-plugin.png)
- * GitHub Pull Requests and Issues: Allows for the access to the code
-   * Author:     GitHub
-   * Image:      ![GitHub Pull Requests and Issues](readme-assets/github-plugin.png)
+    * ev3dev-browser: Allows us to communicate to the robot
+      * Author:     ev3dev
+      * Version:    > 1.0.4
+      * Image:      ![ev3dev-browser](readme-assets/rv3dev-browser-plugin.png)
+    * GitHub Pull Requests and Issues: Allows for the access to the code
+      * Author:     GitHub
+      * Image:      ![GitHub Pull Requests and Issues](readme-assets/github-plugin.png)
 7. Open a Terminal: One is included in Visual Studio Code
 8. Enter the following command: ```pip install python-ev3dev```
    * Installs the ev3dev libraries so you can get better syntax highlighting. (And remove the library not found error)
