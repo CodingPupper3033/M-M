@@ -21,7 +21,8 @@ Authors:        Joshua Miller
 8. Enter the following command: ```pip install python-ev3dev```
    * Installs the ev3dev libraries so you can get better syntax highlighting. (And remove the library not found error)
 9. Connect to the robot: [Connecting to the robot](#connecting-to-the-robot)
-10. Connect the robot to Visual Studio Code: [Connect your EV3 to Visual Studio Code](#connect-your-ev3-to-visual-studio-code)
+10. Setup GitHub - So you can get the code, and contribute to it: [Setup Github](#setup-github)
+11. Connect the robot to Visual Studio Code: [Connect your EV3 to Visual Studio Code](#connect-your-ev3-to-visual-studio-code)
 
 
 ## Connecting to the robot
@@ -38,4 +39,25 @@ Authors:        Joshua Miller
 9. Either click on the robot's name from your PC, or your computer's name from the robot.
 10. Make sure the pins matchup, and accept the pair request.
 
+
+## Setup Github
+1. Cry
+2. Brace yourself
+3. Cry again
+4. Make a folder for your project
+5. Open a Terminal: One is included in Visual Studio Code
+6. Change directory to that of the folder you just created: ```cd <folder>``` will help. Either enter the absolute path, or the name of a folder inside the folder you currently are in. - Crying yet?
+7. Run the command: ```git init``` - will tell git/(GitHub, kind of, it is a square and rectangle relationship) that this folder will be communicating with git/GitHub. 
+8. Pull the code: [Pulling code from Github](#pulling-code-from-github)
+9. Code.
+
+
+## Pulling code from Github:
+1. Run the command: ```git pull <repository> <branch>``` - this will get the code from our project, and store it onto your computer:
+    * Our ```<repository>```: (https://github.com/CodingPupper3033/M-M.git)[https://github.com/CodingPupper3033/M-M.git]
+    * The branch is up for you to decide. Leaving it blank will take you to master (where the most "final" code should go)
+
+
 ## Connect your EV3 to Visual Studio Code
+1. Click on the Explorer button on the left pane: ![Explorer Button](readme-assets/explorer-button.png)
+2. At the bottom, 
