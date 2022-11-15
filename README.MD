@@ -3,6 +3,18 @@ Last updated:   11/14/2022
 Authors:        Joshua Miller
 ```
 
+## Useful items
+* [Wumpus Project](https://homepages.hass.rpi.edu/heuveb/Teaching/M&M/WumpusWorld/WumpusWorld.htm)
+* [Learn EV3 Python](https://sites.google.com/site/ev3devpython/learn_ev3_python)
+* [EV3 Dev](https://www.ev3dev.org/)
+* [Python Example](https://github.com/ev3dev/ev3dev-lang-python)
+* [API Reference](https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/ev3dev-stretch/spec.html)
+
+
+## How to proceed:
+1. [How to start](#how-to-start)
+2. [How to code](#how-to-code)
+
 ## How to start:
 1. Download Visual Studio Code - Software for building code for the robot (IDE): [https://code.visualstudio.com/](https://code.visualstudio.com/)
 2. Install Python - Programming Language used for the robot: [https://www.python.org/](https://www.python.org/)
@@ -23,6 +35,12 @@ Authors:        Joshua Miller
 9. Connect to the robot: [Connecting to the robot](#connecting-to-the-robot)
 10. Setup GitHub - So you can get the code, and contribute to it: [Setup Github](#setup-github)
 11. Connect the robot to Visual Studio Code: [Connect your EV3 to Visual Studio Code](#connect-your-ev3-to-visual-studio-code)
+
+
+## How to Code:
+1. Make sure you did everything in [How to start](#how-to-start)
+2. Do some coding.
+3. 
 
 
 ## Connecting to the robot
