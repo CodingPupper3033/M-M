@@ -76,7 +76,7 @@ Authors:        Joshua Miller
 
 ## Pulling code from Github:
 1. Run the command: ```git pull <repository> <branch>``` - this will get the code from our project, and store it onto your computer:
-    * Our ```<repository>```: (https://github.com/CodingPupper3033/M-M.git)[https://github.com/CodingPupper3033/M-M.git]
+    * Our ```<repository>```: [https://github.com/CodingPupper3033/M-M.git](https://github.com/CodingPupper3033/M-M.git)
     * The branch is up for you to decide. Leaving it blank will take you to master (where the most "final" code should go)
 
 
