@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Icons (Bootstrap Icons) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Icons (Google Material Icons) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
 <div class="container-fluid p-3">
     <div class="row">
         <!-- Left -->
-        <div class="col-8">
+        <div class="col-7">
             <div class="card">
                 <div class="card-header">
                     <h1> What is Wumpus World?</h1>
@@ -44,35 +44,199 @@
                 <div class="card-body">
                     <p>
                         <!-- Wumpus Description -->
-
+                        Wumpus World is a physical, logical puzzle game consisting of a 4x4 grid with multiple types of tiles. The grid background is black, with straight, white tape gridlines. The game's objective is to traverse the board by entering tiles directly adjacent to the current and obtain the gold without falling into holes or getting killed by Wumpus. The robot must determine the best way to travel by receiving signals about what types of tiles are adjacent to the cell the robot stops inside.
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- Right -->
-        <div class="col-4">
+        <div class="col-5">
             <!-- Wumpus Board -->
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-primary text-bg-primary">
                     <h2>
                         Example Board
                     </h2>
                 </div>
 
-                <div class="card-body col-12">
-                    <img src="img/sample_wumpus_board.jpg" class="img-fluid mx-auto d-block">
+                <div class="card-body">
+                    <div class="col-6 mx-auto d-block">
+                        <img src="img/sample_wumpus_board.jpg" class="img-fluid mx-auto d-block">
+                    </div>
                 </div>
             </div>
+
+            <br>
+            <br>
+
+            <!-- Declaration of tiles -->
+            <h1 class="col-12"> <span class="badge bg-primary col-12"> Tile Types:</span></h1>
 
             <br>
 
             <!-- Empty Tile -->
             <div class="card">
-                <div class="card-header">
-                    <i class="bi bi-square"></i>
+                <div class="card-header bg-secondary text-bg-secondary">
+                    <h2>
+                        <span class="material-icons-outlined">
+                            check_box_outline_blank
+                        </span>
+                        Empty Tile:
+                    </h2>
+                </div>
+
+                <div class="card-body">
+                    <p>
+                        <!-- Empty Tile Description -->
+                        &emsp;
+                        This tile is the most generic and the most common. The robot can cross this type of tile without any issues. If the robot is in this tile, it may cross into any of the four tiles directly attached to this tile. In addition, if the robot stops in this tile, it will receive signals about tiles adjacent to the current tile.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <table class="table">
+                        <thead>
+                            <th colspan="2">Signal:</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Inside:</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Beside:</td>
+                            <td>0</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+
+            <br>
+
+            <!-- Pit Tile -->
+            <div class="card">
+                <div class="card-header bg-secondary text-bg-secondary">
+                    <h2>
+                        <span class="material-icons-outlined">
+                            disabled_by_default
+                        </span>
+                        Pit Tile:
+                    </h2>
+                </div>
+
+                <div class="card-body">
+                    <p>
+                        <!-- Pit Tile Description -->
+                        &emsp;
+                        This tile is dangerous to the robot. This tile is not avoidable unless the robot traverses around it. If the robot is to cross into this type of tile, the game is over, and the robot fails the puzzle. When the robot is adjacent to this tile, the signal produced is called a breeze, with a value of 1.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <table class="table">
+                        <thead>
+                            <th colspan="2">Signal:</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Inside:</td>
+                            <td>Fail</td>
+                        </tr>
+                        <tr>
+                            <td>Beside:</td>
+                            <td>1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Wumpus Tile -->
+            <div class="card">
+                <div class="card-header bg-secondary text-bg-secondary">
+                    <h2>
+                        <span class="material-icons-outlined">
+                            <span class="material-icons-outlined">
+                                bug_report
+                            </span>
+                        </span>
+                        Wumpus Tile:
+                    </h2>
+                </div>
+
+                <div class="card-body">
+                    <p>
+                        <!-- Wumpus Tile Description -->
+                        &emsp;
+                        Like hole tiles, crossing into a Wumpus tile will end the game, and the robot will have failed to solve the puzzle. However, unlike hole tiles, if the robot is next to and pointed in the direction of Wumpus, the robot may desire to shoot the Wumpus, killing the Wumpus and removing the obstacle. When the robot is adjacent to this tile, the signal produced is called a stench, with a value of 2.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <table class="table">
+                        <thead>
+                            <th colspan="2">Signal:</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Inside:</td>
+                            <td>Fail</td>
+                        </tr>
+                        <tr>
+                            <td>Beside:</td>
+                            <td>2</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Gold Tile -->
+            <div class="card">
+                <div class="card-header bg-secondary text-bg-secondary">
+                    <h2>
+                        <span class="material-icons-outlined">
+                            <span class="material-icons-outlined">
+                                toll
+                            </span>
+                        </span>
+                        Gold Tile:
+                    </h2>
+                </div>
+
+                <div class="card-body">
+                    <p>
+                        <!-- Gold Tile Description -->
+                        &emsp;
+                        This tile is desirable to navigate into, as the puzzle's objective is to travel to this tile (without falling into a hole or being killed by Wumpus) and then return to the starting position. If the robot is inside the tile containing gold, it will receive a signal of 8. In addition, when the robot is adjacent to this tile, the signal produced is called glitter, with a value of 4.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <table class="table">
+                        <thead>
+                            <th colspan="2">Signal:</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Inside:</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Beside:</td>
+                            <td>4</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
