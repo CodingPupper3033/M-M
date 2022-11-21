@@ -25,16 +25,16 @@ class Layout(object):
         return layout_str[:-2] + '\n'
     
     def insert(self, obj):
-        if self.layout[obj.y][obj.x] == None:
-            self.layout[obj.y][obj.x] = obj
+        if self.layout[obj.x][obj.y] == None:
+            self.layout[obj.x][obj.y] = obj
         else:
             raise ValueError("Square already has an object in this location")
     
     def get_object(self, pos: tuple):
-        return self.layout[pos[1]][pos[0]]
+        return self.layout[pos[0]][pos[1]]
     
     def remove_object(self, pos: tuple):
-        self.layout[pos[1]][pos[0]] = None
+        self.layout[pos[1]][pos[1]] = None
 
 # class Square(object):
 #     def __init__(self, obstacle_type):
@@ -79,8 +79,8 @@ class Gold(object):
 class Robot(object):
     def __init__(self, layout_map):
         self.layout_map = layout_map
-        self.x = 0
-        self.y = len(self.layout_map.layout) - 1
+        self.x = len(self.layout_map.layout) - 1
+        self.y = 0
         self.direction = 1 # 1 - North, 2 - East, 3 - South, 4 - West
         self.layout_map.insert(self)
     
