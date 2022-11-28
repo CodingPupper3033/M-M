@@ -39,7 +39,7 @@
 <div class="container-fluid p-3">
     <div class="row">
         <!-- Left -->
-        <div class="col-7">
+        <div class="col-6">
             <!-- What is Wumpus world? -->
             <div class="card">
                 <div class="card-header bg-primary text-bg-primary">
@@ -60,16 +60,38 @@
 
             <br>
 
-            <!-- Our Robot -->
-            <div class="card">
-                <div class="card-header bg-primary text-bg-primary">
-                    <h1>Shaggy - Our Robot</h1>
+            <!-- Board and Robot -->
+            <div class="row">
+                <!-- Wumpus Board -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-bg-primary">
+                            <h2>
+                                Example Board
+                            </h2>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="col-6 mx-auto d-block">
+                                <img src="img/sample_wumpus_board.jpg" class="img-fluid mx-auto d-block">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="card-body col-6 mx-auto d-block">
-                    <!-- TODO Get Shaggy Picture -->
-                    <img class="img-fluid" src="img/shaggy.png">
-                    <!-- TODO Explain Shaggy -->
+                <!-- Our Robot -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-bg-primary">
+                            <h2>Shaggy - Our Robot</h2>
+                        </div>
+
+                        <div class="card-body col-6 mx-auto d-block">
+                            <!-- TODO Get Shaggy Picture -->
+                            <img class="img-fluid" src="img/shaggy.png">
+                            <!-- TODO Explain Shaggy -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -85,7 +107,7 @@
                     <div class="row">
                         <!-- Joshua M -->
                         <div class="container-fluid p-1 col-3">
-                            <div class="card m-1">
+                            <div class="card m-1 h-100">
                                 <div class="container-fluid p-1">
                                     <img class="card-img-top img-thumbnail rounded-circle ratio-1x1"
                                          src="img/joshuam.png">
@@ -109,7 +131,7 @@
 
                         <!-- Ziv S -->
                         <div class="container-fluid p-1 col-3">
-                            <div class="card m-1">
+                            <div class="card m-1 h-100">
                                 <div class="container-fluid p-1">
                                     <img class="card-img-top img-thumbnail rounded-circle ratio-1x1" src="img/zivs.jpg">
                                 </div>
@@ -134,7 +156,7 @@
                         <!-- TODO Add Person -->
                         <!-- x -->
                         <div class="container-fluid p-1 col-3">
-                            <div class="card m-1">
+                            <div class="card m-1 h-100">
                                 <div class="container-fluid p-1">
                                     <img class="card-img-top img-thumbnail rounded-circle ratio-1x1" src="">
                                 </div>
@@ -156,7 +178,7 @@
                         <!-- TODO Add Person -->
                         <!-- x -->
                         <div class="container-fluid p-1 col-3">
-                            <div class="card m-1">
+                            <div class="card m-1 h-100">
                                 <div class="container-fluid p-1">
                                     <img class="card-img-top img-thumbnail rounded-circle ratio-1x1" src="">
                                 </div>
@@ -181,194 +203,204 @@
             </div>
         </div>
 
-        <!-- TODO Possibly make it 2x2 instead of 1x4 -->
         <!-- Right -->
-        <div class="col-5">
-            <!-- Wumpus Board -->
+        <div class="col-6">
+            <!-- Declaration of tiles -->
             <div class="card">
                 <div class="card-header bg-primary text-bg-primary">
-                    <h2>
-                        Example Board
-                    </h2>
+                    <h1>Tile Types:</h1>
                 </div>
-
                 <div class="card-body">
-                    <div class="col-6 mx-auto d-block">
-                        <img src="img/sample_wumpus_board.jpg" class="img-fluid mx-auto d-block">
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <br>
-
-            <!-- Declaration of tiles -->
-            <h1 class="col-12"> <span class="badge bg-primary col-12"> Tile Types:</span></h1>
-
-            <br>
-
-            <!-- Empty Tile -->
-            <div class="card">
-                <div class="card-header bg-secondary text-bg-secondary">
-                    <h2>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- Empty Tile -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header bg-secondary text-bg-secondary">
+                                        <h2>
                         <span class="material-icons-outlined">
                             check_box_outline_blank
                         </span>
-                        Empty Tile:
-                    </h2>
-                </div>
+                                            Empty Tile:
+                                        </h2>
+                                    </div>
 
-                <div class="card-body">
-                    <p>
-                        <!-- Empty Tile Description -->
-                        &emsp;
-                        This tile is the most generic and the most common. The robot can cross this type of tile without any issues. If the robot is in this tile, it may cross into any of the four tiles directly attached to this tile. In addition, if the robot stops in this tile, it will receive signals about tiles adjacent to the current tile.
-                    </p>
-                </div>
+                                    <div class="card-body">
+                                        <p>
+                                            <!-- Empty Tile Description -->
+                                            &emsp;
+                                            This tile is the most generic and the most common. The robot can cross this
+                                            type of tile without any issues. If the robot is in this tile, it may cross
+                                            into any of the four tiles directly attached to this tile. In addition, if
+                                            the robot stops in this tile, it will receive signals about tiles adjacent
+                                            to the current tile.
+                                        </p>
+                                    </div>
 
-                <div class="card-footer">
-                    <table class="table">
-                        <thead>
-                            <th colspan="2">Signal:</th>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Inside:</td>
-                            <td>N/A</td>
-                        </tr>
-                        <tr>
-                            <td>Beside:</td>
-                            <td>0</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                                    <div class="card-footer">
+                                        <table class="table">
+                                            <thead>
+                                            <th colspan="2">Signal:</th>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Inside:</td>
+                                                <td>N/A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Beside:</td>
+                                                <td>0</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
 
-            <br>
-
-            <!-- Pit Tile -->
-            <div class="card">
-                <div class="card-header bg-secondary text-bg-secondary">
-                    <h2>
+                            <!-- Pit Tile -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header bg-secondary text-bg-secondary">
+                                        <h2>
                         <span class="material-icons-outlined">
                             disabled_by_default
                         </span>
-                        Pit Tile:
-                    </h2>
-                </div>
+                                            Pit Tile:
+                                        </h2>
+                                    </div>
 
-                <div class="card-body">
-                    <p>
-                        <!-- Pit Tile Description -->
-                        &emsp;
-                        This tile is dangerous to the robot. This tile is not avoidable unless the robot traverses around it. If the robot is to cross into this type of tile, the game is over, and the robot fails the puzzle. When the robot is adjacent to this tile, the signal produced is called a breeze, with a value of 1.
-                    </p>
-                </div>
+                                    <div class="card-body">
+                                        <p>
+                                            <!-- Pit Tile Description -->
+                                            &emsp;
+                                            This tile is dangerous to the robot. This tile is not avoidable unless the
+                                            robot traverses around it. If the robot is to cross into this type of tile,
+                                            the game is over, and the robot fails the puzzle. When the robot is adjacent
+                                            to this tile, the signal produced is called a breeze, with a value of 1.
+                                        </p>
+                                    </div>
 
-                <div class="card-footer">
-                    <table class="table">
-                        <thead>
-                            <th colspan="2">Signal:</th>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Inside:</td>
-                            <td>Fail</td>
-                        </tr>
-                        <tr>
-                            <td>Beside:</td>
-                            <td>1</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                                    <div class="card-footer">
+                                        <table class="table">
+                                            <thead>
+                                            <th colspan="2">Signal:</th>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Inside:</td>
+                                                <td>Fail</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Beside:</td>
+                                                <td>1</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-            <br>
+                        <br>
 
-            <!-- Wumpus Tile -->
-            <div class="card">
-                <div class="card-header bg-secondary text-bg-secondary">
-                    <h2>
+                        <div class="row">
+                            <!-- Wumpus Tile -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header bg-secondary text-bg-secondary">
+                                        <h2>
                         <span class="material-icons-outlined">
                             <span class="material-icons-outlined">
                                 bug_report
                             </span>
                         </span>
-                        Wumpus Tile:
-                    </h2>
-                </div>
+                                            Wumpus Tile:
+                                        </h2>
+                                    </div>
 
-                <div class="card-body">
-                    <p>
-                        <!-- Wumpus Tile Description -->
-                        &emsp;
-                        Like hole tiles, crossing into a Wumpus tile will end the game, and the robot will have failed to solve the puzzle. However, unlike hole tiles, if the robot is next to and pointed in the direction of Wumpus, the robot may desire to shoot the Wumpus, killing the Wumpus and removing the obstacle. When the robot is adjacent to this tile, the signal produced is called a stench, with a value of 2.
-                    </p>
-                </div>
+                                    <div class="card-body">
+                                        <p>
+                                            <!-- Wumpus Tile Description -->
+                                            &emsp;
+                                            Like hole tiles, crossing into a Wumpus tile will end the game, and the
+                                            robot will have failed to solve the puzzle. However, unlike hole tiles, if
+                                            the robot is next to and pointed in the direction of Wumpus, the robot may
+                                            desire to shoot the Wumpus, killing the Wumpus and removing the obstacle.
+                                            When the robot is adjacent to this tile, the signal produced is called a
+                                            stench, with a value of 2.
+                                        </p>
+                                    </div>
 
-                <div class="card-footer">
-                    <table class="table">
-                        <thead>
-                            <th colspan="2">Signal:</th>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Inside:</td>
-                            <td>Fail</td>
-                        </tr>
-                        <tr>
-                            <td>Beside:</td>
-                            <td>2</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                                    <div class="card-footer">
+                                        <table class="table">
+                                            <thead>
+                                            <th colspan="2">Signal:</th>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Inside:</td>
+                                                <td>Fail</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Beside:</td>
+                                                <td>2</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
 
-            <br>
-
-            <!-- Gold Tile -->
-            <div class="card">
-                <div class="card-header bg-secondary text-bg-secondary">
-                    <h2>
+                            <!-- Gold Tile -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header bg-secondary text-bg-secondary">
+                                        <h2>
                         <span class="material-icons-outlined">
                             <span class="material-icons-outlined">
                                 toll
                             </span>
                         </span>
-                        Gold Tile:
-                    </h2>
-                </div>
+                                            Gold Tile:
+                                        </h2>
+                                    </div>
 
-                <div class="card-body">
-                    <p>
-                        <!-- Gold Tile Description -->
-                        &emsp;
-                        This tile is desirable to navigate into, as the puzzle's objective is to travel to this tile (without falling into a hole or being killed by Wumpus) and then return to the starting position. If the robot is inside the tile containing gold, it will receive a signal of 8. In addition, when the robot is adjacent to this tile, the signal produced is called glitter, with a value of 4.
-                    </p>
-                </div>
+                                    <div class="card-body">
+                                        <p>
+                                            <!-- Gold Tile Description -->
+                                            &emsp;
+                                            This tile is desirable to navigate into, as the puzzle's objective is to
+                                            travel to this tile (without falling into a hole or being killed by Wumpus)
+                                            and then return to the starting position. If the robot is inside the tile
+                                            containing gold, it will receive a signal of 8. In addition, when the robot
+                                            is adjacent to this tile, the signal produced is called glitter, with a
+                                            value of 4.
+                                        </p>
+                                    </div>
 
-                <div class="card-footer">
-                    <table class="table">
-                        <thead>
-                            <th colspan="2">Signal:</th>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Inside:</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>Beside:</td>
-                            <td>4</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                                    <div class="card-footer">
+                                        <table class="table">
+                                            <thead>
+                                            <th colspan="2">Signal:</th>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Inside:</td>
+                                                <td>8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Beside:</td>
+                                                <td>4</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
