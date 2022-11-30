@@ -16,3 +16,20 @@
 |     | A discussion of the project as it relates to some of the things we talked about in class For example, do you think your robot is intelligent? Is it conscious? Does it have a mind? Do you feel any differently regarding the feasibility of AI now that you did this project? |
 |     | And, of course: team members, robot name, logo, slogan, pictures, movies, songs, merchandise, etc. The Works!                                                                                                                                                                  |
 
+## TODO List:
+
+[ ] Team Members Description (image + desired title + sentence about you) - Still waiting on Anish and Patrick
+[ ] What choices were made in physical design? - Ziv
+[ ] Log Book - Josh (And Further Help from others)
+[ ] Fully Fleshed out light sensing/grid traversal algorithm - Ziv
+[ ] Fully Fleshed out traversal algorithm - Patrick & Anish
+[ ] High Level not too detailed explanation of the algorithm - Patrick
+[ ] Implemented light sensing/grid traversal algorithm - Ziv (maybe Josh if needed)
+[ ] Implemented traversal algorithm - Anish (if needed Patrick)
+[ ] Is the robot intelligent, conscious, mindful? Is AI feasible? - Up for grabs; maybe Anish?
+[ ] Team Logo - Josh
+[ ] "The Works!" - Up for grabs
+[ ] Discussion on roundup - Tentatively Josh
+
+
+
