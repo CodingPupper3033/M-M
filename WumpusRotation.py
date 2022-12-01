@@ -53,7 +53,7 @@ def rotateDirection(direction): # Rotates from the current position to the: 1 - 
     rotate(((direction-1)%4)*90)
 
 def getGyroAngle():
-    return -gyroSensor.angle
+    return -gyroSensor.angle # Counterclockwise is +... wtf
     
 def restrictAngle180(x):
     return ((x + 180) % 360) - 180
