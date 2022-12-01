@@ -20,7 +20,7 @@
 ## TODO List:
 
 - [ ] Team Members Description (image + desired title + sentence about you) - Still waiting on Anish and Patrick
-- [ ] What choices were made in physical design? - Ziv
+- [ ] What choices were made in physical design? - Ziv & Josh
 - [ ] Log Book - Josh (And Further Help from others)
 - [ ] Fully Fleshed out light sensing/grid traversal algorithm - Ziv
 - [ ] Fully Fleshed out traversal algorithm - Patrick & Anish
