@@ -24,7 +24,7 @@ tempI = 0;
 tempMax = 90;
 rotateAngle = 90;
 
-def rotateTo(angle):
+def rotateTo(angle): # Rotates to a specified angle
     print("Rotating to angle: %d"%angle)
     angle = restrictAngle180(angle)
     
@@ -48,7 +48,7 @@ def rotateTo(angle):
     motorRight.stop()
     print("Rotated to angle: %d"%getGyroAngle())
 
-def rotate(angle):
+def rotate(angle): #Changes the current angle by the variable angle 
     rotateTo(getGyroAngle()+angle)
 
 def rotateToDirection(direction): # 1 - North, 2 - East, 3 - South, 4 - West
