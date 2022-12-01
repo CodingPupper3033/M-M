@@ -27,12 +27,10 @@
 - [ ] High Level not too detailed explanation of the algorithm - Patrick
 - [ ] Implemented light sensing/grid traversal algorithm - Ziv (maybe Josh if needed)
 - [ ] Implementation of general grid traversal (rotating, moving to spot, knowing where the robot is) - Unknown. Sort of
+- [ ] Implementation of communication to the robot (SSH) - Up for grabs. If Ziv finishes light sensing, maybe him?
   all hands on deck, Josh included?
 - [ ] Implemented traversal algorithm - Anish (if needed Patrick)
 - [ ] Is the robot intelligent, conscious, mindful? Is AI feasible? - Up for grabs; maybe Anish?
 - [ ] Team Logo - Josh
 - [ ] "The Works!" - Up for grabs
 - [ ] Discussion on roundup - Tentatively Josh
-
-
-
