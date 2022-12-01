@@ -2,7 +2,8 @@
 * https://github.com/CodingPupper3033/M-M.git
 
 ## Writeup:
-* https://homepages.hass.rpi.edu/heuveb/Teaching/M&M/WumpusWorld/RobotWriteup19.pdf
+* [Instructions](https://homepages.hass.rpi.edu/heuveb/Teaching/M&M/WumpusWorld/RobotWriteup19.pdf)
+* [Our Writeup](https://docs.google.com/document/d/1CogqTBDX6T_T8rmJduV3WPQfqCB1ckFXHIBXkuGI9A0/edit?usp=sharing)
 
 
 ## Check List:
