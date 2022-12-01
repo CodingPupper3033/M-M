@@ -51,10 +51,10 @@ def rotateTo(angle): # Rotates to a specified angle
 def rotate(angle): #Changes the current angle by the variable angle 
     rotateTo(getGyroAngle()+angle)
 
-def rotateToDirection(direction): # 1 - North, 2 - East, 3 - South, 4 - West
+def rotateToDirection(direction): #Rotates to direction: 1 - North, 2 - East, 3 - South, 4 - West
     rotateTo(((direction-1)%4)*90)
 
-def rotateDirection(direction): # 1 - Nothing, 2 - East, 3 - South, 4 - West
+def rotateDirection(direction): # Rotates from the current position to the: 1 - Nothing, 2 - Right, 3 - Back, 4 - Left
     rotate(((direction-1)%4)*90)
 
 def getGyroAngle():
@@ -63,4 +63,4 @@ def getGyroAngle():
 def restrictAngle180(x):
     return ((x + 180) % 360) - 180
 
-gyroSensor.reset() 
+gyroSensor.reset() # Resets the gyro to have north be the direction we were when we started 
