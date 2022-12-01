@@ -19,11 +19,6 @@ os.system('setfont Lat15-TerminusBold14')
 #Initializing sensors
 gyroSensor = GyroSensor(INPUT_3)
 
-
-tempI = 0;
-tempMax = 90;
-rotateAngle = 90;
-
 def rotateTo(angle): # Rotates to a specified angle
     print("Rotating to angle: %d"%angle)
     angle = restrictAngle180(angle)
