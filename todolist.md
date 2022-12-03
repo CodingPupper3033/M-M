@@ -1,7 +1,11 @@
+layout: page
+title: "PAGE-TITLE"
+permalink: /todolist
+
 ## TODO List:
 
 - [x] Team Members Description (image + desired title + sentence about you) - **Still waiting on Anish - Got sick of
-waiting, needed to move on. If you ever respond I can try to add it**
+  waiting, needed to move on. If you ever respond I can try to add it**
 - [ ] What choices were made in physical design? - Ziv & Josh
 - [ ] Log Book - Josh (And Further Help from others)
 - [ ] Fully Fleshed out light sensing/grid traversal algorithm - Ziv
@@ -9,7 +13,7 @@ waiting, needed to move on. If you ever respond I can try to add it**
 - [ ] High Level not too detailed explanation of the algorithm - Patrick
 - [ ] Implemented light sensing/grid traversal algorithm - Ziv (maybe Josh if needed)
 - [ ] Implementation of general grid traversal (~~rotating~~, moving to spot, knowing where the robot is) - Unknown.
-Sort of
+  Sort of
 - [x] Implementation of communication to the robot (SSH) - Up for grabs. If Ziv finishes light sensing, maybe him? - **
 just just input() and print()**
 all hands on deck, Josh included?
