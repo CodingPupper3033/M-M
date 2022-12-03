@@ -1,7 +1,3 @@
-layout: page
-title: "PAGE-TITLE"
-permalink: /todolist
-
 ## TODO List:
 
 - [x] Team Members Description (image + desired title + sentence about you) - **Still waiting on Anish - Got sick of
