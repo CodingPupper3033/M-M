@@ -4,6 +4,7 @@
   waiting, needed to move on. If you ever respond I can try to add it**
 - [ ] What choices were made in physical design? - Ziv & Josh
 - [ ] Log Book - Josh (And Further Help from others)
+- [ ] Resources on the website (like this list) - Josh
 - [ ] Fully Fleshed out light sensing/grid traversal algorithm - Ziv
 - [x] Fully Fleshed out traversal algorithm - Patrick & Anish
 - [ ] High Level not too detailed explanation of the algorithm - Patrick
