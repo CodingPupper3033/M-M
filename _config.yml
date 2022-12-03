@@ -1,3 +1,10 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+
 markdown: kramdown
 theme: minima
 include:
