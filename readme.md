@@ -1,5 +1,5 @@
 ## Schedule:
-* https://github.com/CodingPupper3033/M-M.git
+* [https://github.com/CodingPupper3033/M-M.git](https://homepages.hass.rpi.edu/heuveb/Teaching/M&M/WumpusWorld/Checkpoints2015.pdf)
 
 ## Writeup:
 * [Instructions](https://homepages.hass.rpi.edu/heuveb/Teaching/M&M/WumpusWorld/RobotWriteup19.pdf)
