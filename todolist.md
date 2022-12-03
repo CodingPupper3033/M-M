@@ -12,10 +12,10 @@
 - [ ] Implementation of general grid traversal (~~rotating~~, moving to spot, knowing where the robot is) - Unknown.
   Sort of
 - [x] Implementation of communication to the robot (SSH) - Up for grabs. If Ziv finishes light sensing, maybe him? - **
-just just input() and print()**
-all hands on deck, Josh included?
-- [ ] Implemented traversal algorithm - Anish (if needed Patrick)
+  just just input() and print()**
+  all hands on deck, Josh included?
+- [ ] Implemented traversal algorithm - Anish & Patrick
 - [ ] Is the robot intelligent, conscious, mindful? Is AI feasible? - Up for grabs; maybe Anish?
 - [ ] Team Logo - Josh - ~~Asking, may need to use old one~~ Should get by before Friday
 - [ ] "The Works!" - Up for grabs
-- [ ] Discussion on roundup - Tentatively Josh
+- [ ] Discussion on roundup - Tentatively Josh but hopefully not
