@@ -19,18 +19,21 @@
 
 ## TODO List:
 
-- [ ] Team Members Description (image + desired title + sentence about you) - Still waiting on Anish and Patrick
+- [x] Team Members Description (image + desired title + sentence about you) - **Still waiting on Anish - Got sick of
+  waiting, needed to move on. If you ever respond I can try to add it**
 - [ ] What choices were made in physical design? - Ziv & Josh
 - [ ] Log Book - Josh (And Further Help from others)
 - [ ] Fully Fleshed out light sensing/grid traversal algorithm - Ziv
-- [ ] Fully Fleshed out traversal algorithm - Patrick & Anish
+- [x] Fully Fleshed out traversal algorithm - Patrick & Anish
 - [ ] High Level not too detailed explanation of the algorithm - Patrick
 - [ ] Implemented light sensing/grid traversal algorithm - Ziv (maybe Josh if needed)
-- [ ] Implementation of general grid traversal (rotating, moving to spot, knowing where the robot is) - Unknown. Sort of
-- [ ] Implementation of communication to the robot (SSH) - Up for grabs. If Ziv finishes light sensing, maybe him?
+- [ ] Implementation of general grid traversal (~~rotating~~, moving to spot, knowing where the robot is) - Unknown.
+  Sort of
+- [x] Implementation of communication to the robot (SSH) - Up for grabs. If Ziv finishes light sensing, maybe him? - **
+  just just input() and print()**
   all hands on deck, Josh included?
 - [ ] Implemented traversal algorithm - Anish (if needed Patrick)
 - [ ] Is the robot intelligent, conscious, mindful? Is AI feasible? - Up for grabs; maybe Anish?
-- [ ] Team Logo - Josh
+- [ ] Team Logo - Josh - ~~Asking, may need to use old one~~ Should get by before Friday
 - [ ] "The Works!" - Up for grabs
 - [ ] Discussion on roundup - Tentatively Josh
