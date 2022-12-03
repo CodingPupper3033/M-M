@@ -32,6 +32,6 @@
 - [x] Pictures - Maybe retake?
 - [ ] Movies
 - [ ] Songs
-- [ ] Merchandise
-- [ ] Etc
+- [ ] Merchandise - Maybe sell the logo or website?
+- [ ] Etc - Etc
 - [ ] The Works!
