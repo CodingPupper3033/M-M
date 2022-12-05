@@ -14,8 +14,8 @@
 - [ ] A log book describing your day-by-day efforts: problems you ran into, changes you made, etc
   - [x] Day 1
   - [x] Day 2
-  - [ ] Day 3 - Review
-  - [ ] Day 4 - Review
+  - [x] Day 3
+  - [x] Day 4
   - [ ] Day 5 - Review
   - [ ] Day 6 - Hasn't happened yet
 - [ ] An informal, high-level, description and explanation of the algorithm used to attack the Wumpus World. Don’t get
