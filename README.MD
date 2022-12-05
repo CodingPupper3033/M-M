@@ -3,7 +3,7 @@ Last updated:   11/20/2022
 Authors:        Joshua Miller
 ```
 ## Timeline:
- * [Timeline](https://github.com/CodingPupper3033/M-M.git)
+ * [Timeline](https://homepages.hass.rpi.edu/heuveb/Teaching/M&M/WumpusWorld/Checkpoints2015.pdf)
 
 ## Useful items
 * [Wumpus Project](https://homepages.hass.rpi.edu/heuveb/Teaching/M&M/WumpusWorld/WumpusWorld.htm)
