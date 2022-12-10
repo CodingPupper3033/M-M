@@ -144,7 +144,7 @@
                 </div>
             </div>
 
-            <!-- Anish ? -->
+            <!-- Anish P -->
             <div class="container-fluid p-1 col">
                 <div class="card m-1 h-100">
                     <div class="container-fluid p-1">
@@ -152,16 +152,16 @@
                     </div>
                     <div class="card-body bg-light">
                         <p>
-                            <b> Anish ?: </b>
+                            <b> Anish Patel: </b>
                             <br>
                             -
-                            Major <i>'Year</i>
+                            Computer Science <i>'26</i>
                             <br>
                             -
-                            Master Procrastinator
+                            Robot Designer, Algorithm Developer
                             <br>
                             -
-                            Unable to give information for the bio.
+                            Is trilingual.
                         </p>
                     </div>
                 </div>
@@ -228,8 +228,6 @@
                 <h3 class="fw-normal">Shaggy Snapshots</h3>
                 <div id="shaggyCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner rounded-4">
-
-                        <!-- TODO Add Shaggy Pictures -->
                         <!-- Images -->
                         <div class="carousel-item active">
                             <img src="img/shaggy/shaggy-triometric.jpg" class="d-block w-100" alt="Shaggy">
@@ -262,7 +260,27 @@
             <h3 class="fw-normal">Design Decisions:</h3>
             <div class="container-fluid rounded-3">
                 <p class="p-2 fw-normal">
-                    &emsp;
+                    &emsp;The first decision made was the most difficult: What mode of transportation will the robot
+                    have? Our eventual conclusion was that ground transportation was the most feasible, and as a result,
+                    we built it under the assumption that the robot would traverse on the board's surface. In addition,
+                    we concluded that the robot should have a compact design for the sake of a small footprint. This
+                    minimizes the potential causes of issues related to traversing the grid, especially lines.
+                    <br>
+                    &emsp;Since we only were given two motors and one roller, we made the robot front-wheel drive. This
+                    configuration gives us better control over the robot’s rotation. To further improve our ability to
+                    rotate the robot, we added a gyroscope. To keep the robot symmetrical and improve accuracy all while
+                    retaining compactness, we put the sensor in the center of the robot below its brain/Lego Mindstorm
+                    Brick.
+                    <br>
+                    &emsp;To detect grid lines, we added two light sensors, one on each side. This allows us to detect
+                    when we are crossing a line and if we need to rotate our robot. In addition, the position of the
+                    light sensor was important. We wanted the sensors as close to the wheels as possible. This is to
+                    minimize how much the "stationary" light sensor will travel when we rotate the robot, making the
+                    robot have to readjust less often.
+                    <br>
+                    &emsp;For the sake of compactness, multiple horned protrusions were added for wire management
+                    purposes.
+
                 </p>
             </div>
         </div>

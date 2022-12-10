@@ -1,7 +1,6 @@
 ## TODO List:
 
-- [x] Team Members Description (image + desired title + sentence about you) - **Still waiting on Anish - Got sick of
-  waiting, needed to move on. If you ever respond I can try to add it**
+- [x] Team Members Description (image + desired title + sentence about you)
 - [ ] What choices were made in physical design? - Ziv & Josh
 - [ ] Log Book - Josh (And Further Help from others)
 - [ ] Resources on the website (like this list) - Josh
