@@ -11,7 +11,7 @@
 - [x] Implementation of general grid traversal (rotating, moving to spot, knowing where the robot is)
 - [x] Implementation of communication to the robot (SSH) - **just just input() and print()**
 - [x] Implemented traversal algorithm
-- [ ] Is the robot intelligent, conscious, mindful? Is AI feasible?
+- [x] Is the robot intelligent, conscious, mindful? Is AI feasible?
 - [x] Team Logo
 - [x] "The Works!"
-- [ ] Discussion on roundup - Tentatively Josh but hopefully not
+- [x] Discussion on roundup
