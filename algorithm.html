@@ -52,5 +52,83 @@
 </nav>
 <br>
 
+<!-- What the Algorithm will be Description -->
+<div class="container-fluid p-2">
+    <div class="mx-auto text-center">
+        <h1 class="fw-normal">Algorithms Used</h1>
+        <h3 class="fw-lighter">to complete the Wumpus World problem.</h3>
+    </div>
+</div>
+
+<!-- Divider -->
+<div class="container-fluid">
+    <hr>
+</div>
+
+<!-- Algorithms -->
+<div class="container-fluid bg-light">
+    <!-- Rotation -->
+    <div class="card w-100">
+        <div class="card-header">
+            <h2 class="fw-normal">Rotation:</h2>
+        </div>
+
+        <div class="card-body">
+            <p class="fw-light">
+                &emsp; To rotate, it will continuously turn towards the desired angle sensed by the gyro. As the angle
+                gets closer to the desired angle, it will turn slower to make more accurate adjustments. These
+                adjustments will occur until the angle difference is within the specified accuracy range (declared as a
+                constant in the code.)
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Logic -->
+    <div class="card w-100">
+        <div class="card-header">
+            <h2 class="fw-normal">Logic:</h2>
+        </div>
+
+        <div class="card-body">
+            <p class="fw-light">
+                &emsp; Since the board must always be solvable using perfect logic, it can be deduced that the starting
+                space and the two spaces adjacent to it must be safe. In order for a space to be safe it cannot contain
+                either a hole or the Wumpus. It is important to note that if a space has gold on it, it is still
+                considered safe. The robot will then move to the next spot; this will be determined by first seeing
+                which surrounding spots are safe. The robot can only go to spaces that it knows are safe. It then sees
+                which spots have already been visited as it will prioritize traveling to unvisited spots over ones it
+                has already been to. If at this point there isn’t a clear direction for the robot to move in, it will
+                pick to move up first, if it can’t do that, it will try to move left, then right, then down. In the case
+                of moving off the starting space, the robot will choose to move up. Here it will receive a hint about
+                the spaces surrounding it. If it receives nothing, the robot can be sure that all surrounding spaces are
+                empty. If it feels a breeze or smells a stench, it assigns a chance of there being a hole (if it feels a
+                breeze) or the Wumpus (if it smells a stench) in every space that does not already have some contents
+                assigned to it. If the robot smells a stench, but it knows that one of the adjacent spots holds the
+                Wumpus, it will not assign any more spots the chance of having a Wumpus. If the robot is ever certain of
+                the Wumpus’ location, it will kill it, this will empty the spot and provide new possible spaces to
+                explore. If the robot gets to a spot and feels a breeze, any adjacent spot that already has the chance
+                of being a hole can be said to be a hole. If the robot ever gets to a spot that has only one neighbor
+                whose contents have not been determined, if the clue does not match the contents of any other adjacent
+                spot, it can say for certain that that clue is pertaining to that spot. Similar logic applies to the
+                gold as applies to holes or the Wumpus. Any time the robot sees a glimmer, it will assign all open
+                adjacent spots a chance of having the gold. This time, however, the presence of the chance of gold does
+                not make a square unsafe, allowing the robot to move into any square with only the chance of gold
+                without being sure of the gold’s location. If the robot sees a glimmer and one of the adjacent spots has
+                the chance of being the gold, the robot will make the assumption that that spot holds the gold. Once the
+                robot is sure of the gold’s location it will immediately move into that square. In order to get back to
+                the starting spot, the robot will use a sort of guess and check system using breadcrumbs. It will try to
+                get back by prioritizing moving down, then left, then right, then up. It will only travel back to spaces
+                that it has visited already. Upon entering a space, the robot will “place a breadcrumb” this will allow
+                it to keep track of the number of times it has been to this space on its way back. The robot will always
+                try to move toward the space with the fewest breadcrumbs, and if two adjacent spaces have the same
+                amount, it will follow the before-mentioned series of directions. After some amount of time, this will
+                get the robot safely back to its starting point.
+            </p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

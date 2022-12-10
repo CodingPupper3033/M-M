@@ -199,7 +199,95 @@
 
         <div class="card-body">
             <p class="fw-light">
+                &emsp; Today was a very special day as we got our own code to run on Shaggy. To force him to cooperate,
+                we had to give him a Scooby Snack. The Scooby Snack in question was in the form of removing carriage
+                returns from our code. Unbeknownst to us, our code was formatted in CRLF, which would terminate lines
+                with ‘\r\n.’ Unfortunately, Linux only supports lines that end with ‘\n,’ which is why our robot has
+                been unable to run any other code than the sample code. And to that, we have to say Zoinks Scoob!
+                <br><br>
+                &emsp; Unfortunately, solving that issue took much longer than expected.<small><i> Groups of the future,
+                this issue is now in the document, you’re welcome</i></small> As a result, progress on the robot was
+                slowed. Despite this, other members were able to complete more tasks in this project. The tasks are the
+                same as before, with the addition of a somewhat distinct subtask of making the robot rotate. The updates
+                to these subtasks are as follows:
+                <br><br>
+                <b>Website:</b><br>
+                &emsp; This task took the biggest hit when the robot was unable to have code run on it. This is due to
+                the group member responsible for the website taking a slight detour into this issue, which took much
+                longer than they expected.
+                <br><br>
+                &emsp; Despite this, some progress was made, mostly in between classes. First, a to-do list was
+                constructed. This list was made to be used by our group; however, it may eventually be uploaded to the
+                website to further show what tasks we were able to complete and allow others to see what tasks we
+                decided needed to be completed.
+                <br><br>
+                &emsp; We also found a good place to put the design descriptions and set up the header for this. Also,
+                we were able to add another group mate to the group members' bio on the about us page.
+                <br><br>
+                <b>Grid Traversal:</b><br>
+                &emsp; Further implementation of the algorithm was achieved. We were able to add the rule sets for
+                identifying holes and the wumpus into the code. The biggest struggles in implementation were remembering
+                how the algorithm functions and double-checking that the algorithm does what we expect it to do.
+                <br><br>
+                <b>Gridline Traversal:</b><br>
+                &emsp; Developed and implemented pseudocode based on a sample for robot alignment when in motion. Since
+                the robot doesn’t know its relative position in space, to prevent it from veering off the path it will
+                start/stop motors based on light intensity values returned by the light sensors. Light intensity values
+                <50 is black, and >50 are white. If the values of both the left and right light sensors are black, the
+                robot proceeds forward for a set distance. If the robot receives opposite color values from the sensors,
+                the motor on the same side of the sensor that saw white will shut off, while the other motor continues
+                until that light sensor see’s white.
+                <br><br>
+                <b>Rotation:</b><br>
+                Before class started, functions to rotate the robot were implemented. Despite this, we were unsure if
+                the code would work as there were many variables unable to be tested without the robot or adequate
+                documentation. We learned many things in this class. For example, the gyro treats counter-clockwise as
+                positive, which was different than our expectation, making the robot rotate in the wrong direction. In
+                addition, we learned how to properly get the max speed of the motors (and the incorrect ways to as
+                well). The last biggest takeaway we learned was that the motors automatically invert the polarity of the
+                wheels for us. This is very unexpected as the left, and right motors are flipped horizontally, which
+                would invert one of their directions. After realizing these issues, we were able to successfully get
+                Shaggy to rotate accurately and may proceed to other subtasks.
+            </p>
+        </div>
+    </div>
 
+    <br>
+
+    <!-- Day 6: 12/5/22 -->
+    <div class="card w-100">
+        <div class="card-header">
+            <h2 class="fw-normal">Day 6: 12/5/22</h2>
+        </div>
+
+        <div class="card-body">
+            <p class="fw-light">
+                &emsp; The code responsible for the robot's line traversal developed on Day 5 was tested for the first
+                time, it was a failure. Instead of the robot stopping when either sensor detected a line, it would stop
+                afterward, positioning it between 2 grid spaces, then continuing indefinitely. We ended up rewriting the
+                line traversal/alignment code through trial and error. The end result for line traversal was a robot
+                that approached lines at slow speeds for the sake of not overshooting the light sensors. This gave us
+                the best chance of the robot aligning itself parallel with the board. It would then traverse into the
+                adjacent black and continue to the next line, once this occurs the robot would then traverse backward
+                and align itself at the center of the grid box by having the distance traveled from the start to the 2nd
+                line. This code was then combined with the previously developed rotation code which after a few tests
+                would execute properly to various degrees of success. On average after the robot completed transversal
+                to the adjacent square followed by a 90-degree swivel, the robot would end up in the bottom corner
+                instead of the center of the grid box. We concluded this was due to the value calculated for the robot
+                to backtrack to the center of the grid square before the rotation being off.
+                <br><br>
+                &emsp; This was the day of Shaggy's big performance at that night’s plenary meeting. But like Mariah
+                Carey, he sang his soul out while being stationary. The timeline of the algorithm being completed and
+                integrated with the line traversal code did not align with our performance deadline. But despite that
+                Shaggy was still given a standing ovation.
+                <br><br>
+                &emsp; Completely rewrote the logic algorithm after hitting a wall using the last one. Increased the
+                number of variables stored in each instance of the square class, and increased the number of conditions
+                that the robot tests for in each square. The new algorithm keeps track of the amount of adjacent squares
+                whose contents are known and for each square keeps track of what items cannot be in that square. It
+                implements new logic to automatically assign contents to a spot if it is the only available spot and the
+                robot receives a clue. Also implemented logic that if a square has an item in its list of things it
+                cannot be, and the robot receives a clue for that item, it will skip over that square for consideration.
             </p>
         </div>
     </div>
